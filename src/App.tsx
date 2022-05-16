@@ -30,16 +30,11 @@ const App = () => {
       .catch(err => console.log(err))
   })
   const code = data?.weather.code
-
   let jahresZeit
-
-  function getJZ () {
-    const m = dayjs().format('MMMM')
-    if ((m < 'March') || ((m === 'March'))) { jahresZeit = backgroundWinter } else
-    if ((m < 'June') || ((m === 'June'))) { jahresZeit = backgroundSpring } else
-    if ((m < 'September') || ((m === 'September'))) { jahresZeit = backgroundSummer } else { jahresZeit = backgroundAutumn }
-  }
-  getJZ()
+  const m = dayjs().format('MMMM')
+  if ((m < 'March') || ((m === 'March'))) { jahresZeit = backgroundWinter } else
+  if ((m < 'June') || ((m === 'June'))) { jahresZeit = backgroundSpring } else
+  if ((m < 'September') || ((m === 'September'))) { jahresZeit = backgroundSummer } else { jahresZeit = backgroundAutumn }
 
   let weatherIcon = null
 
