@@ -14,6 +14,7 @@
     "@undefined/lint": "github:JohnDeved/undefined-lint",
     "dayjs": "^1.11.2",
     "framer-motion": "^6.3.3",
+    "npm": "^8.10.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-query": "^3.39.0"
