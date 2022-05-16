@@ -10,7 +10,7 @@ import fog from '../weatherdisplay-icons/weather/fog.png'
 import rain from '../weatherdisplay-icons/weather/regen.png'
 import snow from '../weatherdisplay-icons/weather/schnee.png'
 import sun from '../weatherdisplay-icons/weather/sonne.png'
-import cloud from '../weatherdisplay-icons/weather/wolke (1).png'
+import cloud from '../weatherdisplay-icons/weather/wolke.png'
 import cloudy from '../weatherdisplay-icons/weather/wolkig.png'
 import unknown from '../weatherdisplay-icons/weather/unknown.png'
 import umbrella from '../weatherdisplay-icons/weather/regenschirm.png'
@@ -31,9 +31,9 @@ const App = () => {
   })
   const code = data?.weather.code
 
-  let jahresZeit = null
+  let jahresZeit
 
-  function getJZ (j) {
+  function getJZ (j: string) {
     const m = dayjs().format('MMMM')
     if ((m < 'March') || ((m === 'March'))) { jahresZeit = backgroundWinter } else
     if ((m < 'June') || ((m === 'June'))) { jahresZeit = backgroundSpring } else
