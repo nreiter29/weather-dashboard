@@ -109,9 +109,9 @@ const App = () => {
   } else if (code === 802) {
     weatherIcon = cloudy
   } else if (code === 803) {
-    weatherIcon = cloudy
-  } else if (code === 804) {
     weatherIcon = cloud
+  } else if (code === 804) {
+    weatherIcon = storm
   } else if (code === 900) {
     weatherIcon = unknown
   }
