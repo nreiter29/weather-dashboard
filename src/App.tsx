@@ -17,7 +17,7 @@ import umbrella from '../weatherdisplay-icons/weather/regenschirm.png'
 import humidity from '../weatherdisplay-icons/weather/Luftfeuchtigkeit.png'
 import wind from '../weatherdisplay-icons/weather/wind.png'
 import qrcode from '../weatherdisplay-icons/frame.png'
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 import { useQuery } from 'react-query'
 
 const App = () => {
