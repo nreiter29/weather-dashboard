@@ -1,0 +1,3 @@
+[ZoneTransfer]
+ZoneId=3
+HostUrl=https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b177ba5f-540b-4c63-a4d9-4f50c7f51756/Mark_Pro_Italic.otf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220512%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220512T072331Z&X-Amz-Expires=86400&X-Amz-Signature=75d1c0ffeb7bb30548dc38a174474a573ccddef7e0634ca8f23945e73a800ad7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Mark%2520Pro%2520Italic.otf%22&x-id=GetObject
