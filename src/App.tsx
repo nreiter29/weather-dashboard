@@ -1,4 +1,4 @@
-import { ChakraProvider, Box, Img, Text, Heading, Skeleton } from '@chakra-ui/react'
+import { Box, Img, Text, Heading, Skeleton } from '@chakra-ui/react'
 import React from 'react'
 import backgroundSummer from '../weatherdisplay-icons/backgrounds/background-summer.png'
 import backgroundWinter from '../weatherdisplay-icons/backgrounds/background-winter.png'

@@ -1,2 +1,0 @@
-curl - X GET--header 'Accept: application/json'
-'https://api.weatherbit.io/v2.0/current?postal_code=28546&country=AT&lang=de&key=2ca4ecc594f44d1199ea6f5bd967f8f5'
