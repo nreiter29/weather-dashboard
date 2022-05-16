@@ -33,13 +33,13 @@ const App = () => {
 
   let jahresZeit
 
-  function getJZ (j: string) {
+  function getJZ () {
     const m = dayjs().format('MMMM')
     if ((m < 'March') || ((m === 'March'))) { jahresZeit = backgroundWinter } else
     if ((m < 'June') || ((m === 'June'))) { jahresZeit = backgroundSpring } else
     if ((m < 'September') || ((m === 'September'))) { jahresZeit = backgroundSummer } else { jahresZeit = backgroundAutumn }
   }
-  getJZ(day)
+  getJZ()
 
   let weatherIcon = null
 
