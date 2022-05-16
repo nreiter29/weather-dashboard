@@ -38,73 +38,15 @@ const App = () => {
 
   let weatherIcon = null
 
-  if (code === 200) {
+  if (code <= 233) {
     weatherIcon = storm
-  } else if (code === 201) {
-    weatherIcon = storm
-  } else if (code === 202) {
-    weatherIcon = storm
-  } else if (code === 230) {
-    weatherIcon = storm
-  } else if (code === 231) {
-    weatherIcon = storm
-  } else if (code === 232) {
-    weatherIcon = storm
-  } else if (code === 233) {
-    weatherIcon = storm
-  } else if (code === 300) {
+  } else if ((code <= 522) && (code >= 234)) {
     weatherIcon = rain
-  } else if (code === 301) {
-    weatherIcon = rain
-  } else if (code === 302) {
-    weatherIcon = rain
-  } else if (code === 500) {
-    weatherIcon = rain
-  } else if (code === 501) {
-    weatherIcon = rain
-  } else if (code === 502) {
-    weatherIcon = rain
-  } else if (code === 511) {
-    weatherIcon = rain
-  } else if (code === 520) {
-    weatherIcon = rain
-  } else if (code === 521) {
-    weatherIcon = rain
-  } else if (code === 522) {
-    weatherIcon = rain
-  } else if (code === 600) {
+  } else if ((code <= 623) && (code >= 523)) {
     weatherIcon = snow
-  } else if (code === 601) {
-    weatherIcon = snow
-  } else if (code === 602) {
-    weatherIcon = snow
-  } else if (code === 610) {
-    weatherIcon = snow
-  } else if (code === 611) {
-    weatherIcon = snow
-  } else if (code === 612) {
-    weatherIcon = snow
-  } else if (code === 621) {
-    weatherIcon = snow
-  } else if (code === 622) {
-    weatherIcon = snow
-  } else if (code === 623) {
-    weatherIcon = snow
-  } else if (code === 700) {
+  } else if ((code <= 751) && (code >= 624)) {
     weatherIcon = fog
-  } else if (code === 711) {
-    weatherIcon = fog
-  } else if (code === 721) {
-    weatherIcon = fog
-  } else if (code === 731) {
-    weatherIcon = fog
-  } else if (code === 741) {
-    weatherIcon = fog
-  } else if (code === 751) {
-    weatherIcon = fog
-  } else if (code === 800) {
-    weatherIcon = sun
-  } else if (code === 801) {
+  } else if ((code <= 801) && (code >= 752)) {
     weatherIcon = sun
   } else if (code === 802) {
     weatherIcon = cloudy
