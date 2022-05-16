@@ -75,7 +75,7 @@ const App = () => {
         </Box>
         <Img src={weatherIcon} h="220px" w="220px" ml="auto" mr="auto"/>
         <Skeleton isLoaded={!isLoading} mt="20px" display="flex" textAlign="center" justifyContent="center">
-          <Text fontSize="46px" fontWeight={500} mr="50px">{data?.app_temp?.toFixed(0)}°</Text>
+          <Text fontSize="46px" fontWeight={600} mr="50px">{data?.app_temp?.toFixed(0)}°</Text>
           <Text fontSize="46px" fontWeight={300}>{data?.temp?.toFixed(0)}°</Text>
         </Skeleton>
         <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
