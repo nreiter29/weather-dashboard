@@ -61,14 +61,14 @@ const App = () => {
   return (
     <Box w="100vw" h="100vh">
       <Img src={jahresZeit} w="100%" h="100%" position="relative" opacity="0.5"/>
-      <Box position="absolute" alignItems="center" justifyContent="end" right={['20px', '30px', '40px', '50px']} bottom="full" top={['20px', '30px', '40px', '50px']} display="flex">
+      <Box position="absolute" alignItems="center" justifyContent="end" right={['20px', '30px', '40px', '50px']} bottom="full" top={['40px', '40px', '40px', '50px']} display="flex">
         <Img src={logo} h={['13px', '23px', '23px', '43px']} pr={['20px', '30px', '40px', '50px']} justifyContent="center"/>
         <Heading fontSize={['23px', '43px', '43px', '63px']} color="black">Country Club</Heading>
       </Box>
-      <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top={['200px', '180px', '170px', '0px', '150px']} h={['33px', '43px', '53px', '63px']}>
+      <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top={['100px', '180px', '170px', '0px', '150px']} h={['33px', '43px', '53px', '63px']}>
         <Heading fontSize={['23px', '23px', '43px', '63px']}>Weather today in Kitzbühel</Heading>
       </Box>
-      <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['80px', '100px', '100px', '160px']}>
+      <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['250px', '100px', '100px', '160px']}>
         <Heading fontSize={['26px', '26px', '36px', '46px']} fontWeight={400}>{date}</Heading>
         <Box mb="15px">
           <Heading fontSize={['26px', '26px', '36px', '46px']} fontWeight={400}>{day}</Heading>
@@ -91,7 +91,7 @@ const App = () => {
           <Text fontSize={['26px', '26px', '36px', '46px']} fontWeight={300}>{(data?.wind_spd ?? 0 * 3.6).toFixed(0)} km/h</Text>
         </Skeleton>
       </Box>
-      <Box display="flex" flexDir="column" w="auto" textAlign="center" bottom={['20px', '30px', '40px', '50px']} position="absolute" right={['20px', '30px', '40px', '50px']} left="full">
+      <Box display="flex" flexDir="column" w={['full', 'auto']} textAlign="center" bottom={['40px', '30px', '40px', '50px']} position="absolute" right={['auto', '30px', '40px', '50px']} left={['auto', 'full']}>
         <Img src={qrcode} w={['100px', '160px', '180px', '200px', '220px']} h={['150px', '210px', '230px', '250px', '270px']} ml="auto" mr="auto"/>
       </Box>
     </Box>
