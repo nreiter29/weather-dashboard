@@ -24,7 +24,7 @@ const App = () => {
   const date = dayjs().format('D.MM.YYYY')
   const day = dayjs().format('dddd')
   const { data, isLoading } = useQuery('todos', async ({ signal }) => {
-    return await fetch('https://api.weatherbit.io/v2.0/current?postal_code=6370&country=AT&key=2ca4ecc594f44d1199ea6f5bd967f8f5', { signal })
+    return await fetch('https://api.weatherbit.io/v2.0/current?postal_code=6370&country=AT&key=bfb34b901f5845c5b384ba57c47fdf37', { signal })
       .then(res => res.json())
       .then(res => res.data[0])
       .catch(err => console.log(err))
@@ -62,33 +62,33 @@ const App = () => {
     <Box w="100vw" h="100vh">
       <Img src={jahresZeit} w="100%" h="100%" position="relative" opacity="0.5"/>
       <Box position="absolute" alignItems="center" justifyContent="end" right="50px" bottom="full" top="50px" display="flex">
-        <Img src={logo} h="43px" pr="50px" justifyContent="center"/>
-        <Heading fontSize="63px" color="black">Country Club</Heading>
+        <Img src={logo} h={['25px', '30px', '38px', '43px']} pr="50px" justifyContent="center"/>
+        <Heading fontSize={['45px', '50px', '58px', '63px']} color="black">Country Club</Heading>
       </Box>
-      <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top="150px" h="63px">
+      <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top="150px" h={['45px', '50px', '58px', '63px']}>
         <Heading fontSize="63px">Weather today in Kitzbühel</Heading>
       </Box>
       <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap="30px" flexWrap="wrap" alignContent="center" bottom="160px">
-        <Heading fontSize="46px" fontWeight={500}>{date}</Heading>
+        <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={500}>{date}</Heading>
         <Box mb="15px">
-          <Heading fontSize="46px" fontWeight={500}>{day}</Heading>
+          <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={500}>{day}</Heading>
         </Box>
         <Img src={weatherIcon} h="220px" w="220px" ml="auto" mr="auto"/>
         <Skeleton isLoaded={!isLoading} mt="20px" display="flex" textAlign="center" justifyContent="center">
-          <Text fontSize="46px" fontWeight={600} mr="50px">{data?.app_temp?.toFixed(0)}°</Text>
-          <Text fontSize="46px" fontWeight={300}>{data?.dewpt?.toFixed(0)}°</Text>
+          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={600} mr="50px">{data?.app_temp?.toFixed(0)}°</Text>
+          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={300}>{data?.dewpt?.toFixed(0)}°</Text>
         </Skeleton>
         <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
           <Img src={umbrella} w="78px" h="78px" mr="50px"/>
-          <Text fontSize="46px" fontWeight={300}>{data?.precip?.toFixed(0)}%</Text>
+          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={300}>{data?.precip?.toFixed(0)}%</Text>
         </Skeleton>
         <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
           <Img src={humidity} w="78px" h="78px" mr="50px"/>
-          <Text fontSize="46px" fontWeight={300}>{data?.rh?.toFixed(0)}%</Text>
+          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={300}>{data?.rh?.toFixed(0)}%</Text>
         </Skeleton>
         <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
           <Img src={wind} w="78px" h="78px" mr="50px"/>
-          <Text fontSize="46px" fontWeight={300}>{(data?.wind_spd ?? 0 * 3.6).toFixed(0)} km/h</Text>
+          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={300}>{(data?.wind_spd ?? 0 * 3.6).toFixed(0)} km/h</Text>
         </Skeleton>
       </Box>
       <Box display="flex" flexDir="column" w="auto" textAlign="center" bottom="50px" position="absolute" right="50px" left="full">
