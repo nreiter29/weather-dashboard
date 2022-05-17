@@ -51,7 +51,7 @@ const App = () => {
   } else if (code === 802) {
     weatherIcon = cloudy
   } else if (code === 803) {
-    weatherIcon = cloudy
+    weatherIcon = cloud
   } else if (code === 804) {
     weatherIcon = storm
   } else if (code === 900) {
@@ -69,13 +69,13 @@ const App = () => {
         <Heading fontSize={['13px', '23px', '43px', '63px']}>Weather today in Kitzbühel</Heading>
       </Box>
       <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['40px', '40px', '40px', '160px']}>
-        <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={500}>{date}</Heading>
+        <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={400}>{date}</Heading>
         <Box mb="15px">
-          <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={500}>{day}</Heading>
+          <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={400}>{day}</Heading>
         </Box>
         <Img src={weatherIcon} h={['100px', '160px', '180px', '200px', '220px']} w={['100px', '160px', '180px', '200px', '220px']} ml="auto" mr="auto"/>
         <Skeleton isLoaded={!isLoading} mt="20px" display="flex" textAlign="center" justifyContent="center">
-          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={600} mr={['20px', '30px', '40px', '50px']}>{data?.app_temp?.toFixed(0)}°</Text>
+          <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={450} mr={['20px', '30px', '40px', '50px']}>{data?.app_temp?.toFixed(0)}°</Text>
           <Text fontSize={['16px', '26px', '36px', '46px']} fontWeight={300}>{data?.dewpt?.toFixed(0)}°</Text>
         </Skeleton>
         <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
@@ -92,7 +92,6 @@ const App = () => {
         </Skeleton>
       </Box>
       <Box display="flex" flexDir="column" w="auto" textAlign="center" bottom={['20px', '30px', '40px', '50px']} position="absolute" right={['20px', '30px', '40px', '50px']} left="full">
-        <Heading fontSize={['26px', '46px', '56px', '66px']} fontWeight={500}>Events:</Heading>
         <Img src={qrcode} w={['100px', '160px', '180px', '200px', '220px']} h={['150px', '210px', '230px', '250px', '270px']} ml="auto" mr="auto"/>
       </Box>
     </Box>
