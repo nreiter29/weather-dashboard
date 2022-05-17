@@ -65,10 +65,10 @@ const App = () => {
         <Img src={logo} h={['13px', '23px', '23px', '43px']} pr={['20px', '30px', '40px', '50px']} justifyContent="center"/>
         <Heading fontSize={['23px', '43px', '43px', '63px']} color="black">Country Club</Heading>
       </Box>
-      <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top={['200px', '180px', '170px', '160px', '150px']} h={['33px', '43px', '53px', '63px']}>
+      <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top={['200px', '180px', '170px', '0px', '150px']} h={['33px', '43px', '53px', '63px']}>
         <Heading fontSize={['13px', '23px', '43px', '63px']}>Weather today in Kitzbühel</Heading>
       </Box>
-      <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['40px', '40px', '40px', '160px']}>
+      <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['80px', '100px', '100px', '160px']}>
         <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={400}>{date}</Heading>
         <Box mb="15px">
           <Heading fontSize={['16px', '26px', '36px', '46px']} fontWeight={400}>{day}</Heading>
