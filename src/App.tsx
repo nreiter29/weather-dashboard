@@ -60,7 +60,7 @@ const App = () => {
   }
 
   return (
-    <Container maxW="container.lg" pl="0" maxH="container.l" centerContent>
+    <Container maxW="container.lg" pl="0" maxH="container.l" centerContent pr="0">
       <Box w="100vw" h="100vh" fontFamily={theme}>
         <Img src={jahresZeit} w="100%" h="100%" position="relative" opacity="0.5"/>
         <Box position="absolute" alignItems="center" justifyContent="end" right={['20px', '30px', '40px', '50px']} bottom="full" top={['40px', '40px', '40px', '50px']} display="flex">
