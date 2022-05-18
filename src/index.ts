@@ -1,10 +1,9 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, theme as base } from '@chakra-ui/react'
 
 const theme = extendTheme({
   fonts: {
-    heading: 'Mark Pro',
-    body: 'Mark Pro',
-    Text: 'Mark Pro',
+    heading: 'Mark Pro, ${base.fonts.heading}',
+    body: 'Mark Pro, ${base.fonts.body}',
   },
 })
 

@@ -4,6 +4,8 @@ import App from './App'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from './index'
 import { QueryClientProvider, QueryClient } from 'react-query'
+import '../weatherdisplay-icons/MarkPro/MarkPro.otf'
+import './style.css'
 
 const client = new QueryClient()
 

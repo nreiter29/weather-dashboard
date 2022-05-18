@@ -19,6 +19,7 @@ import wind from '../weatherdisplay-icons/weather/wind.png'
 import qrcode from '../weatherdisplay-icons/frame.png'
 import dayjs from 'dayjs'
 import { useQuery } from 'react-query'
+import theme from './index'
 
 const App = () => {
   const date = dayjs().format('D.MM.YYYY')
@@ -59,7 +60,7 @@ const App = () => {
   }
 
   return (
-    <Box w="100vw" h="100vh">
+    <Box w="100vw" h="100vh" fontFamily={theme}>
       <Img src={jahresZeit} w="100%" h="100%" position="relative" opacity="0.5"/>
       <Box position="absolute" alignItems="center" justifyContent="end" right={['20px', '30px', '40px', '50px']} bottom="full" top={['40px', '40px', '40px', '50px']} display="flex">
         <Img src={logo} h={['13px', '23px', '23px', '43px']} pr={['20px', '30px', '40px', '50px']} justifyContent="center"/>
