@@ -63,34 +63,34 @@ const App = () => {
     <Container maxW="container.lg" pl="0" maxH="container.l" centerContent pr="0">
       <Box w="100vw" h="100vh" fontFamily={theme}>
         <Img src={jahresZeit} w="100%" h="100%" position="relative" opacity="0.5" objectFit="cover"/>
-        <Box position="absolute" alignItems="center" justifyContent="end" right={['20px', '30px', '40px', '50px']} bottom="full" top={['40px', '40px', '40px', '50px']} display="flex">
+        <Box position="absolute" alignItems="center" justifyContent="end" right={['20px', '30px', '40px', '50px']} bottom="full" top={['40px', '40px', '40px', '15px', '40px', '50px']} display="flex">
           <Img src={logo} h={['13px', '23px', '23px', '43px']} pr={['20px', '30px', '40px', '50px']} justifyContent="center"/>
           <Heading fontSize={['23px', '43px', '43px', '63px']} color="black">Country Club</Heading>
         </Box>
-        <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top={['100px', '180px', '170px', '0px', '150px']} h={['33px', '43px', '53px', '63px']}>
+        <Box pos="absolute" bottom="0" w="full" display="flex" justifyContent="center" top={['100px', '100px', '180px', '100px', '0px', '150px']} h={['33px', '43px', '53px', '63px']}>
           <Heading fontSize={['23px', '23px', '43px', '63px']}>Weather today in Kitzbühel</Heading>
         </Box>
-        <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['110px', '220px', '100px', '100px', '160px']}>
-          <Heading fontSize={['26px', '26px', '36px', '46px']} fontWeight={400}>{date}</Heading>
+        <Box position="absolute" w="full" display="flex" justifyContent="center" textAlign="center" flexDir="column" gap={['10px', '10px', '10px', '10px', '20px', '30px']} flexWrap="wrap" alignContent="center" bottom={['110px', '110px', '110px', '0px', '100px', '160px']}>
+          <Heading fontSize={['26px', '26px', '26px', '36px', '36px', '46px']} fontWeight={400}>{date}</Heading>
           <Box mb="15px">
-            <Heading fontSize={['26px', '26px', '36px', '46px']} fontWeight={400}>{day}</Heading>
+            <Heading fontSize={['26px', '26px', '26px', '36px', '36px', '46px']} fontWeight={400}>{day}</Heading>
           </Box>
           <Img src={weatherIcon} h={['100px', '160px', '180px', '200px', '220px']} w={['100px', '160px', '180px', '200px', '220px']} ml="auto" mr="auto"/>
           <Skeleton isLoaded={!isLoading} mt="20px" display="flex" textAlign="center" justifyContent="center">
-            <Text fontSize={['26px', '26px', '36px', '46px']} fontWeight={450} mr={['20px', '30px', '40px', '50px']}>{data?.app_temp?.toFixed(0)}°</Text>
-            <Text fontSize={['26px', '26px', '36px', '46px']} fontWeight={300}>{data?.dewpt?.toFixed(0)}°</Text>
+            <Text fontSize={['26px', '26px', '26px', '36px', '36px', '46px']} fontWeight={450} mr={['20px', '30px', '40px', '50px']}>{data?.app_temp?.toFixed(0)}°</Text>
+            <Text fontSize={['26px', '26px', '26px', '26px', '36px', '46px']} fontWeight={300}>{data?.dewpt?.toFixed(0)}°</Text>
           </Skeleton>
           <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
             <Img src={umbrella} w={['38px', '48px', '58px', '68px', '78px']} h={['38px', '48px', '58px', '68px', '78px']} mr={['20px', '30px', '40px', '50px']}/>
-            <Text fontSize={['26px', '26px', '36px', '46px']} fontWeight={300}>{data?.precip?.toFixed(0)}%</Text>
+            <Text fontSize={['26px', '26px', '26px', '36px', '36px', '46px']} fontWeight={300}>{data?.precip?.toFixed(0)}%</Text>
           </Skeleton>
           <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
             <Img src={humidity} w={['38px', '48px', '58px', '68px', '78px']} h={['38px', '48px', '58px', '68px', '78px']} mr={['20px', '30px', '40px', '50px']}/>
-            <Text fontSize={['26px', '26px', '36px', '46px']} fontWeight={300}>{data?.rh?.toFixed(0)}%</Text>
+            <Text fontSize={['26px', '26px', '26px', '36px', '36px', '46px']} fontWeight={300}>{data?.rh?.toFixed(0)}%</Text>
           </Skeleton>
           <Skeleton isLoaded={!isLoading} display="flex" justifyContent="center">
             <Img src={wind} w={['38px', '48px', '58px', '68px', '78px']} h={['38px', '48px', '58px', '68px', '78px']} mr={['20px', '30px', '40px', '50px']}/>
-            <Text fontSize={['26px', '26px', '36px', '46px']} fontWeight={300}>{(data?.wind_spd ?? 0 * 3.6).toFixed(0)} km/h</Text>
+            <Text fontSize={['26px', '26px', '26px', '36px', '36px', '46px']} fontWeight={300}>{(data?.wind_spd ?? 0 * 3.6).toFixed(0)} km/h</Text>
           </Skeleton>
         </Box>
         <Box display="flex" flexDir="column" w={['auto', 'full', 'auto']} textAlign="center" bottom={['40px', '30px', '40px', '50px']} position="absolute" right={['10px', 'auto', '30px', '40px', '50px']} left={['auto', 'full']}>
